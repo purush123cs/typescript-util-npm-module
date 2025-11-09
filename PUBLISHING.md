@@ -56,7 +56,7 @@ src/
    ```bash
    npm link
    # In another project directory:
-   npm link my-typescript-utility-lib
+   npm link typescript-util-npm-module
    ```
 
 3. **Publish to npm:**
@@ -87,12 +87,12 @@ To test your package locally before publishing:
 
 2. In a test project:
    ```bash
-   npm link my-typescript-utility-lib
+   npm link typescript-util-npm-module
    ```
 
 3. Use it in your test project:
    ```javascript
-   const Utils = require('my-typescript-utility-lib');
+   const Utils = require('typescript-util-npm-module');
    console.log(Utils.String.capitalize('test'));
    ```
 
@@ -102,16 +102,16 @@ Once published, consumers can install and use your package:
 
 ### Installation
 ```bash
-npm install my-typescript-utility-lib
+npm install typescript-util-npm-module
 ```
 
 ### CommonJS Usage
 ```javascript
 // Import all utilities
-const { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } = require('my-typescript-utility-lib');
+const { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } = require('typescript-util-npm-module');
 
 // Import specific utilities for better performance
-const { StringUtils } = require('my-typescript-utility-lib');
+const { StringUtils } = require('typescript-util-npm-module');
 
 console.log(StringUtils.capitalize('hello'));
 console.log(ArrayUtils.unique([1, 2, 2, 3]));
@@ -120,10 +120,10 @@ console.log(ArrayUtils.unique([1, 2, 2, 3]));
 ### ES6 Module Usage
 ```javascript
 // Import all utilities
-import { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } from 'my-typescript-utility-lib';
+import { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } from 'typescript-util-npm-module';
 
 // Import only what you need (better for tree-shaking)
-import { StringUtils, NumberUtils } from 'my-typescript-utility-lib';
+import { StringUtils, NumberUtils } from 'typescript-util-npm-module';
 
 console.log(StringUtils.capitalize('hello'));
 console.log(NumberUtils.randomBetween(1, 10));
@@ -132,7 +132,7 @@ console.log(NumberUtils.randomBetween(1, 10));
 ### TypeScript Usage
 ```typescript
 // Import utilities and types
-import { StringUtils, ArrayUtils, ApiResponse, DeepPartial } from 'my-typescript-utility-lib';
+import { StringUtils, ArrayUtils, ApiResponse, DeepPartial } from 'typescript-util-npm-module';
 
 // Full type safety
 const result: string = StringUtils.capitalize('hello');
