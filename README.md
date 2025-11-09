@@ -13,7 +13,7 @@ A modular collection of useful TypeScript utility functions for common programmi
 ## Installation
 
 ```bash
-npm install my-typescript-utility-lib
+npm install typescript-util-npm-module
 ```
 
 ## Usage
@@ -22,13 +22,13 @@ npm install my-typescript-utility-lib
 
 ```typescript
 // Import all utilities
-import { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } from 'my-typescript-utility-lib';
+import { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } from 'typescript-util-npm-module';
 
 // Import only specific utilities for better tree-shaking
-import { StringUtils, ArrayUtils } from 'my-typescript-utility-lib';
+import { StringUtils, ArrayUtils } from 'typescript-util-npm-module';
 
 // Import types
-import { ApiResponse, DeepPartial, Callback } from 'my-typescript-utility-lib';
+import { ApiResponse, DeepPartial, Callback } from 'typescript-util-npm-module';
 
 // Usage examples
 const capitalized = StringUtils.capitalize('hello world'); // "Hello world"
@@ -39,10 +39,10 @@ const uniqueArray = ArrayUtils.unique([1, 2, 2, 3, 3, 4]); // [1, 2, 3, 4]
 
 ```javascript
 // Import all utilities
-const { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } = require('my-typescript-utility-lib');
+const { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } = require('typescript-util-npm-module');
 
 // Import specific utilities
-const { StringUtils } = require('my-typescript-utility-lib');
+const { StringUtils } = require('typescript-util-npm-module');
 
 const camelCase = StringUtils.toCamelCase('hello world'); // "helloWorld"
 ```
@@ -77,7 +77,7 @@ const camelCase = StringUtils.toCamelCase('hello world'); // "helloWorld"
 ## Examples
 
 ```typescript
-import { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } from 'my-typescript-utility-lib';
+import { StringUtils, ArrayUtils, NumberUtils, ObjectUtils } from 'typescript-util-npm-module';
 
 // String utilities
 console.log(StringUtils.capitalize('hello')); // "Hello"
@@ -123,7 +123,7 @@ src/
 ### Available Types
 
 ```typescript
-import { ApiResponse, DeepPartial, Callback } from 'my-typescript-utility-lib';
+import { ApiResponse, DeepPartial, Callback } from 'typescript-util-npm-module';
 
 // Generic API response interface
 const response: ApiResponse<string[]> = {
