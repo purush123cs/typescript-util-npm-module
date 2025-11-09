@@ -1,0 +1,44 @@
+{
+  "name": "my-typescript-utility-lib",
+  "version": "1.0.0",
+  "description": "A TypeScript utility library for common functions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "npx ts-node tests/test.ts",
+    "test:js": "node examples/example.js",
+    "test:esm": "node examples/example.mjs",
+    "test:all": "npm test && npm run test:js && npm run test:esm",
+    "version": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "typescript",
+    "utility",
+    "library",
+    "npm",
+    "module"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/my-typescript-utility-lib.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/my-typescript-utility-lib/issues"
+  },
+  "homepage": "https://github.com/yourusername/my-typescript-utility-lib#readme"
+}
